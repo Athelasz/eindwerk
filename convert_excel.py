@@ -15,6 +15,7 @@ def parse_time(cols, df, tzo):
     :rtype: list
     """
 
+UnicodeDecodeError
     col_list = []
     for c in cols:
         date = to_datetime(df['date_meeting']+' '+df[c+'_hour'])
